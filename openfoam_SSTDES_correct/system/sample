@@ -1,0 +1,137 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      sample;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+type sets;
+libs            ("libsampling.so");
+
+interpolationScheme cellPoint;
+
+setFormat       raw;
+
+sets
+(
+    line_1
+    {
+        type    lineUniform;
+        axis    distance;
+        start   (0.701 0 0.355);
+        end     (0.701 0 0.388);
+        nPoints 20;
+    }
+    line_2
+        {
+        type    lineUniform;
+        axis    distance;
+        start   (0.761 0 0.330);
+        end     (0.761 0 0.388);
+        nPoints 30;
+    }
+    line_3
+        {
+        type    lineUniform;
+        axis    distance;
+        start   (0.781 0 0.321);
+        end     (0.781 0 0.388);
+        nPoints 30;
+    }
+    line_4
+        {
+        type    lineUniform;
+        axis    distance;
+        start   (0.801 0 0.311);
+        end     (0.801 0 0.388);
+        nPoints 30;
+    }
+    line_5
+        {
+        type    lineUniform;
+        axis    distance;
+        start   (0.821 0 0.302);
+        end     (0.821 0 0.388);
+        nPoints 30;
+    }
+    line_6
+        {
+        type    lineUniform;
+        axis    distance;
+        start   (0.841 0 0.292);
+        end     (0.841 0 0.388);
+        nPoints 30;
+    }
+    line_7
+        {
+        type    lineUniform;
+        axis    distance;
+        start   (0.861 0 0.283);
+        end     (0.861 0 0.388);
+        nPoints 30;
+    }
+    line_8
+        {
+        type    lineUniform;
+        axis    distance;
+        start   (0.881 0 0.274);
+        end     (0.881 0 0.388);
+        nPoints 30;
+    }
+    line_9
+        {
+        type    lineUniform;
+        axis    distance;
+        start   (0.901 0 0.264);
+        end     (0.901 0 0.388);
+        nPoints 30;
+    }
+    line_10
+        {
+        type    lineUniform;
+        axis    distance;
+        start   (0.921 0 0.255);
+        end     (0.921 0 0.388);
+        nPoints 30;
+    }
+    line_11
+        {
+        type    lineUniform;
+        axis    distance;
+        start   (0.941 0 0.247);
+        end     (0.941 0 0.388);
+        nPoints 30;
+    }
+    line_12
+        {
+        type    lineUniform;
+        axis    distance;
+        start   (0.961 0 0.028);
+        end     (0.961 0 0.388);
+        nPoints 40;
+    }
+    line_13
+        {
+        type    lineUniform;
+        axis    distance;
+        start   (0.981 0 0.028);
+        end     (0.981 0 0.388);
+        nPoints 40;
+    }
+    
+    
+);
+
+fields          ( UMeanx );
+
+
+// ************************************************************************* //
